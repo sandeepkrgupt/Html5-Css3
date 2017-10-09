@@ -1,4 +1,4 @@
-What is Web Worker ? Create one ?
+1. What is Web Worker ? Create one ?
 
 Ans - 
 A web worker is a JavaScript code running in the background, without affecting the performance of the page.
@@ -40,7 +40,7 @@ Stop a Web Worker --
 w.terminate();
 
 _________________________________________________________________________________________________
-What is SSE in Html5. Explain with Example ?
+2. What is SSE in Html5. Explain with Example ?
 
 Ans -
 Server-Sent Events allow a web page to get updates from a server.
@@ -58,7 +58,7 @@ onopen	- When a connection to the server is opened
 onmessage - 	When a message is received
 onerror	- When an error occurs
 ______________________________________________________________________________________________
-What is geo location ? how to use it ?
+3. What is geo location ? how to use it ?
 
 Ans -
 The HTML Geolocation API is used to locate a user's position.
@@ -109,7 +109,7 @@ POSITION_UNAVAILABLE - Location information is unavailable.
 TIMEOUT - The request to get user location timed out.
 UNKNOWN_ERROR - An unknown error occurred.
 __________________________________________________________________________________________________
-create local and session storage and define it ?
+4. create local and session storage and define it ?
 
 Ans - 
 Local Storage
