@@ -1,5 +1,119 @@
 What is Web Worker ? Create one ?
 
+Ans - 
+A web worker is a JavaScript running in the background, without affecting the performance of the page.
+
+Check Web Worker Support --
+if (typeof(Worker) !== "undefined") {
+    // Yes! Web worker support!
+    // Some code.....
+} else {
+    // Sorry! No Web Worker support..
+}
+
+Create a Web Worker File --
+var i = 0;
+
+function timedCount() {
+    i = i + 1;
+    postMessage(i);
+    setTimeout("timedCount()",500);
+}
+
+timedCount();
+--------------------------------------------------
+Create a Web Worker Object --
+if (typeof(w) == "undefined") {
+    w = new Worker("demo_workers.js");
+}
+--------------------------------------------------
+we can send and receive messages from the web worker. --
+w.onmessage = function(event){
+    document.getElementById("result").innerHTML = event.data;
+};
+---------------------------------------------
+Terminate a Web Worker --
+w.terminate();
+
+_________________________________________________________________________________________________
 What is SSE in Html5. Explain with Example ?
 
+Ans -
+Server-Sent Events allow a web page to get updates from a server.
+<script>
+if(typeof(EventSource) !== "undefined") {
+    var source = new EventSource("demo_sse.php");
+    source.onmessage = function(event) {
+        document.getElementById("result").innerHTML += event.data + "<br>";
+    };
+} else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support server-sent events...";
+}
+</script>
+onopen	- When a connection to the server is opened
+onmessage - 	When a message is received
+onerror	- When an error occurs
+______________________________________________________________________________________________
 What is geo location ? how to use it ?
+
+Ans -
+The HTML Geolocation API is used to locate a user's position.
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    var latlon = position.coords.latitude + "," + position.coords.longitude;
+    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
+    +latlon+"&zoom=14&size=400x300&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
+    document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+}
+//To use this code on your website, get a free API key from Google.
+//Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+}
+</script>
+PERMISSION_DENIED - User denied the request for Geolocation.
+POSITION_UNAVAILABLE - Location information is unavailable.
+TIMEOUT - The request to get user location timed out.
+UNKNOWN_ERROR - An unknown error occurred.
+__________________________________________________________________________________________________
+create local and session storate and define it ?
+
+Ans - 
+
+<script>
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+    // Store
+    localStorage.setItem("lastname", "Smith");
+    // Retrieve
+    document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+} else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+</script>
+window.localStorage - stores data with no expiration date
+window.sessionStorage - stores data for one session (data is lost when the browser tab is closed)
