@@ -18,10 +18,11 @@ function timedCount() {
     postMessage(i);
     setTimeout("timedCount()",500);
 }
-**postMessage() method is used to post a message back to the HTML page.
-**timedCount() fires or calls stopCount() if time goes below zero. 
 
 timedCount();
+
+**postMessage() method is used to post a message back to the HTML page.
+**timedCount() fires or calls stopCount() if time goes below zero. 
 --------------------------------------------------
 Create a Web Worker Object --
 if (typeof(w) == "undefined") {
