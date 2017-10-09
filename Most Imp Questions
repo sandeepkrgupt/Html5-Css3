@@ -13,7 +13,6 @@ if (typeof(Worker) !== "undefined") {
 
 Create a Web Worker File --
 var i = 0;
-
 function timedCount() {
     i = i + 1;
     postMessage(i);
