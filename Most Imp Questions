@@ -118,6 +118,7 @@ if (typeof(Storage) !== "undefined") {
 window.localStorage - stores data with no expiration date
 window.sessionStorage - stores data for one session (data is lost when the browser tab is closed)
 
+_______________________________________________________________________________________________________
 
 5. Showing video in Html5 and handling play , pause and stop using javascript ?
 
