@@ -34,7 +34,7 @@ w.onmessage = function(event){
     document.getElementById("result").innerHTML = event.data;
 };
 
-**onmessage - When the web worker posts a message, the code within the event listener is executed
+**onmessage - When a message is received.
 ---------------------------------------------
 Stop a Web Worker --
 w.terminate();
