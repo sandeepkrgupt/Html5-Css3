@@ -1,7 +1,7 @@
 What is Web Worker ? Create one ?
 
 Ans - 
-A web worker is a JavaScript running in the background, without affecting the performance of the page.
+A web worker is a JavaScript code running in the background, without affecting the performance of the page.
 
 Check Web Worker Support --
 if (typeof(Worker) !== "undefined") {
