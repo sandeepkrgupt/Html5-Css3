@@ -64,6 +64,7 @@ Ans -
 The HTML Geolocation API is used to locate a user's position.
 <button onclick="getLocation()">Try It</button>
 
+<p id="demo"></p>
 <div id="mapholder"></div>
 
 <script>
