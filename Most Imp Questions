@@ -62,6 +62,7 @@ What is geo location ? how to use it ?
 
 Ans -
 The HTML Geolocation API is used to locate a user's position.
+<div id="demo" width="400" height="200"></div>
 <script>
 var x = document.getElementById("demo");
 
