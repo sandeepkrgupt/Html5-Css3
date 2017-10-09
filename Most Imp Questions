@@ -144,11 +144,14 @@ sessionStorage.removeItem('key');
 sessionStorage.clear();
 
 e.g -
+if(typeof(Storage) !== 'undefined'){
 var user = {'name':'John'};
 sessionStorage.setItem('username', user);
 var x = sessionStorage.getItem('username'); 
 document.getElementById("demo").innerHTML = x;
-
+}else{
+alert("ur browser not support storage");
+}
 _______________________________________________________________________________________________________
 
 5. Showing video in Html5 and handling play , pause and stop using javascript ?
