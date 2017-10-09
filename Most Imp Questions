@@ -33,6 +33,8 @@ we can send and receive messages from the web worker. --
 w.onmessage = function(event){
     document.getElementById("result").innerHTML = event.data;
 };
+
+**onmessage - When the web worker posts a message, the code within the event listener is executed
 ---------------------------------------------
 Terminate a Web Worker --
 w.terminate();
