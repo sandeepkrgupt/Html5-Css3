@@ -19,6 +19,7 @@ function timedCount() {
     postMessage(i);
     setTimeout("timedCount()",500);
 }
+**postMessage() method is used to post a message back to the HTML page.
 
 timedCount();
 --------------------------------------------------
