@@ -145,8 +145,8 @@ sessionStorage.clear();
 
 e.g -
 var user = {'name':'John'};
-sessionStorage.setItem('user', user);
-var x = sessionStorage.user; 
+sessionStorage.setItem('username', user);
+var x = sessionStorage.getItem('username'); 
 document.getElementById("demo").innerHTML = x;
 
 _______________________________________________________________________________________________________
