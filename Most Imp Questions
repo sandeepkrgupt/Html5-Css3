@@ -112,6 +112,7 @@ ________________________________________________________________________________
 create local and session storate and define it ?
 
 Ans - 
+Local Storage
 
 <script>
 // Check browser support
@@ -126,6 +127,27 @@ if (typeof(Storage) !== "undefined") {
 </script>
 window.localStorage - stores data with no expiration date
 window.sessionStorage - stores data for one session (data is lost when the browser tab is closed)
+--------------------------------------------------------------
+Session Storage -
+
+syntax -
+// Save data to sessionStorage
+sessionStorage.setItem('key', 'value');
+
+// Get saved data from sessionStorage
+var data = sessionStorage.getItem('key');
+
+// Remove saved data from sessionStorage
+sessionStorage.removeItem('key');
+
+// Remove all saved data from sessionStorage
+sessionStorage.clear();
+
+e.g -
+var user = {'name':'John'};
+sessionStorage.setItem('user', user);
+var x = sessionStorage.user; 
+document.getElementById("demo").innerHTML = x;
 
 _______________________________________________________________________________________________________
 
