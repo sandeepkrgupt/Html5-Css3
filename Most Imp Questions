@@ -109,7 +109,7 @@ POSITION_UNAVAILABLE - Location information is unavailable.
 TIMEOUT - The request to get user location timed out.
 UNKNOWN_ERROR - An unknown error occurred.
 __________________________________________________________________________________________________
-create local and session storate and define it ?
+create local and session storage and define it ?
 
 Ans - 
 Local Storage
