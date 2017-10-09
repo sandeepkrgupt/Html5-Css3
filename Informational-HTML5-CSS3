@@ -1,1 +1,15 @@
+CSS3
 
+1. div, p	Selects all <div> elements and all <p> elements	
+
+2. element element	div p	Selects all <p> elements inside <div> elements	
+
+3. element>element	div > p	Selects all <p> elements where the parent is a <div> element
+
+4. element+element	div + p	Selects all <p> elements that are placed immediately after <div> elements
+
+5. element1~element2	p ~ ul	Selects every <ul> element that are preceded by a <p> element
+
+6. [attribute]	[target]	Selects all elements with a target attribute
+
+7. [attribute=value]	[target=_blank]	Selects all elements with target="_blank"
