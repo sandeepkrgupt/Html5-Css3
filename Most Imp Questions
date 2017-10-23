@@ -1,3 +1,17 @@
+BAsic -
+Media Query
+All in one Media screens
+ col-xs < 575px
+ 767px > col-sm > 575px
+ 1199px < col-md < 768px
+ 1200px < col-lg
+ In Bootstrap 4.0 -
+575>col-xs
+576>col-sm<767
+768>col-md<991
+992>col-lg<1199
+col-xl>1200
+------------------------------------------------------------------------------
 1. What is Web Worker ? Create one ?
 
 Ans - 
