@@ -297,7 +297,10 @@ $('#button').click(function () {
     }, 3000);
 
 });
-<div class="box">hello</div>
+
+ $('button').click(function(){
+     $('.bubble').animate({transform: "scale(1)"}, 5000, 'linear');
+ });
 
 -------------------------------------------------------------------------------------------------
 Uisng css3 @keyframes -
