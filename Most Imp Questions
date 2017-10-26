@@ -202,7 +202,6 @@ function makeSmall() {
 } 
 
 function makeNormal() { 
-    myVideo.width = 420; 
 } 
 </script> 
 
@@ -238,5 +237,45 @@ User Interface
 --------------------------------------------------------------------------
 see all css3 references in https://www.w3schools.com/cssref/default.asp
 --------------------------------------------------------------------------
+Css3 Selectors -
+
+There are basically 3 types of selecters in css/css3 
+1. Basic Selector
+2. Combinators
+3. Pseudo selectors (Pseudo class and Pseudo elements)
+
+Examples -
+Basic Selectors -
+i)Type selectors
+ii)Class selectors
+iii)ID selectors
+iv)Universal selectors
+v)Attribute selectors
+
+Combinators -
+Adjacent sibling combinator  
+General sibling combinator 
+Child combinator
+Descendant combinator
+
+Pseudo Class Selectors -
+:checked,:default,:disabled,:empty,:enabled,:first,:first-of-type,:fullscreen,:focus-within,:in-range,:invalid
+,:lang(),:last-child,:last-of-type,:left,:link,:not(),:nth-child(),:nth-last-child(),
+:nth-of-type(),:only-child,:only-of-type,:optional,:out-of-range,:placeholder-shown,:read-only,:read-write
+:required,:right,:scope,:target,:valid,:visited etc...
+
+pseudo Element Selector -
+::after (:after)
+::backdrop
+::before (:before)
+::first-letter (:first-letter)
+::first-line (:first-line)
+::placeholder
+::selection
+::cue (:cue)
+element>element,	div > p	Selects all <p> elements where the parent is a <div> element.
+element+element,	div + p	Selects all <p> elements that are placed immediately after <div> elements.
+element1~element2,	p ~ ul	Selects every <ul> element that are preceded by a <p> element.
+
 
 
