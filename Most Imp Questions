@@ -277,5 +277,14 @@ element>element,	div > p	Selects all <p> elements where the parent is a <div> el
 element+element,	div + p	Selects all <p> elements that are placed immediately after <div> elements.
 element1~element2,	p ~ ul	Selects every <ul> element that are preceded by a <p> element.
 
+-------------------------------------------------------------------------------------------
+Bootstrap Offsets -
+Offsets are used for spacing elements in the responsive grid.
+e.g - <div class="container">
+         <div class="col-md-6 col-md-offset-3">Hello</div>
+      </div>
+     Means that in the medium range of the grid system, the element will have a width of 6 colums and there will be 3 blank
+     columns before the element (and as a consequence, will have 3 blank colums after).
+
 
 
