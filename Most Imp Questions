@@ -1,3 +1,11 @@
+Bootstrap -
+
+data- Attributes =>
+data-attributes like (data-target, data-toggle, data-role,data-slide, data-slide-to, data-ride etc..)
+The data-* attributes gives us the ability to embed custom data attributes on all HTML elements.
+The stored (custom) data can then be used in the page's JavaScript to create a more engaging user experience.
+
+
 BAsic -
 Media Query
 All in one Media screens
